@@ -7,21 +7,10 @@ import java.util.InputMismatchException;
 import java.util.Scanner;
 import java.util.concurrent.TimeUnit;
 /*/
- * Anthony Mastrianna #7367479 Final Programming Project
- * Main class with a function that shuffles an array list then returns the arraylist and uses it as an input in a function that pulls each integer from the list,
- * creates a numtile object with this number and the current iteration the for loop is on and adds it to an object array. 
- * This function also defines the string username which is found through another function that returns a userinputted string if the user entered specific names the program will do
- * certain eastereggs like a photo or text refrence. This same username method also asks the player if they need an explanation on how to play the game and will wait for the player to enter a value again to proceed, to allow them to fully read the rules
- * A new randgame object is then made using the numtile array, integer that represents the length of the game and the username that the user inputted.
- * This randgame object uses the numtile array, a game length integer, and the string for the username are then passed into the Randgame object which has a for loop that 
- * will find the rand int assigned to the current iteration of the for loop. It displays the order using a function in the numtile class and then checks using the randint get method of the numtile to check if the number is correct
- * if it is wrong the game goes into the gameover function which shows the user score, username, and asks if the player wants to print a score.txt file if so it will make this file in the same directory of the .java file
- * the playerscore is calculated by multipling the games current integration number by a defined integer and then returning the score into a string that can then be printed and shown to the user
- * if the player gets through all 9 turns of the game they are presented with a victory screen which is from a seperate function which uses the same print score method if the user wishes to have their score printed.
- * The program has the ability to clear the Windows cmd console using a method I was able to find online, this method only works on the windows cmd so that is the best place to play this game. Other terminals won't be cleared and the order from the previous tiles would still be visible
- * The program exits if the player fails to get the order of the tiles correct, if the entered integer is out of range, or if the entered value isn't an integer. It also uses the java sleep method to wait between showing tiles so the order is easy to see.
- * This is a bad explanation but I made this program on a whim and really just had the thoughts in my head
- * 
+ * The inspiration of this project comes from the memory game that can be found in amongus where the player must enter a randomly generated order in a puzzle, but everytime
+ the player enters a new entry in the order the previous entry must also be put in. This game runs for 9 total turns meaning that the player will have to enter the order of 
+ all 9 tiles at the end. The player enters the order using a number 0-8 which corresponds to a tile shown. 
+ This program uses the command terminal instead of a GUI as I am still pretty much a novice at that.
  * 
  */
 
